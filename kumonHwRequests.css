@@ -1,0 +1,125 @@
+/* David Wu 4/14/2020 */
+/* Problem: iframe rendered form contents overflowing horizontally out of page for mobile devices/tablets. Solution: Created containing div#hwRequestsDiv for offending iframe, gave iframe id= hwRequestsIframe. height and max-height have been adjusted to accomodate different screen sizes. */
+
+/* TESTED/FUNCTIONING ON:
+iPad, iPhone X, iPhone 5, iPhone 6-8, Galaxy S5. */
+
+#hwRequestsIframe{
+	position: absolute;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+/* 	overflow-x:hidden; */
+}
+
+#hwRequestsDiv{
+	position: relative;
+	width: 118%;
+	left: -9%;
+	height: 260vw;
+	max-height: 2600px;
+}
+
+/* XSMALL (iPhone 5: 320x568) */
+@media (min-width: 300px) and (max-width: 320px) {
+	#hwRequestsDiv{
+		height: 1150vw;
+		max-height: 4000px;
+	}
+	
+	#footerDetailContainer{
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-around;
+	 align-items: center;
+	}
+  #footerDetails {
+   text-align: center;
+  }
+  #footerDetails>p{
+	 margin:0;
+	}
+}
+/* SMALL SCREENS */
+@media (min-width: 321px) and (max-width: 600px) {
+	#hwRequestsDiv{
+		height: 1000vw;
+		max-height: 3400px;
+	}
+	
+	#footerDetailContainer{
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-around;
+	 align-items: center;
+	}
+  #footerDetails {
+	  text-align: center;
+  }
+	#footerDetails>p{
+		margin:0;
+	}
+}
+
+/* MEDIUM SCREENS */
+@media (min-width: 601px) and (max-width: 992px) {
+	#hwRequestsDiv{
+		height: 290vh;
+	}
+	#footerDetailContainer{
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: flex-start;
+		align-items: center;
+	}
+	#footerDetails > p{
+ 	margin: 0px 0px -5px 0px;
+ }
+}
+
+/* MID-LARGE SCREENS (iPad Pro @ 1024 width) */
+@media (min-width: 993px) and (max-width: 1025px) {
+		#hwRequestsDiv{
+		height: 295vw;
+		max-height: 3000px;
+	}
+	#footerDetailContainer{
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-around;
+	 align-items: flex-start;
+	}
+	#footerDetails > p{
+ 	 margin: 0px 0px -15px 0px;
+  }
+}
+/* LARGE SCREENS */
+@media (min-width: 1026px){
+	#footerDetailContainer{
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-around;
+	 align-items: flex-start;
+	}
+ #footerDetails > p{
+ 	margin: 0px 0px -20px 0px;
+ }
+}
+/* 4/15/2020 FOOTER STYLING check @media queries */
+#footerDetailContainer{
+  visibility: visible;
+	/*LARGE SCREENS*/
+/* 	display: flex;
+	flex-direction: row;
+	justify-content: space-around; */
+/* SMALL SCREENS/MOBILE	 */
+/* 	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center; */
+}
+#footerDetailTitle{
+	text-align: center;
+	margin-top: 8px;
+}

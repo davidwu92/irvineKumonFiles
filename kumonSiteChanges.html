@@ -1,0 +1,183 @@
+<!-- David Wu 4/14/2020 -->
+
+<!-- 3:27PM--FOOTER PROPOSED CHANGES: remove all Footer Text element "titles" and add them in manually at the start of each piece.-->
+<div>
+    <!-- CAMPUS CENTER FOOTER INFO -->
+    <div style="text-align: center">
+      <h3 class="widget-title">Irvine South Center Campus Dr.</h3>
+      </div>
+      <div class="column twocol" style="margin:0, width:50%">
+      <div style="text-indent: 50px"><strong><font color="#fc9835">Address</font></strong>
+      </div>
+      University Town Center<br />
+      4199 Campus Dr, Ste H<br />
+      Irvine, CA 92612<br />
+      First Floor, University Tower. <br/>By Trader Joe's. </br>
+      </div>
+      
+      <div class="column twocol" style="margin:0, width:50%">
+      <div style="text-indent: 50px">
+      <strong><font color="#fc9835">Hours</font></strong>
+      </div>
+      Mon: 3:00pm - 7:00pm<br/>
+      Wed: 2:00pm - 7:00pm<br />
+      Sat: 9:30am - 1:30pm<br />
+      (949) 854-6284 (MATH)<br />
+      irvinekumon@gmail.com <br/>
+      </div>
+
+
+    <!-- BARRANCA CENTER FOOTER -->
+    <div style="text-align: center">
+      <h3 class="widget-title">Irvine A+ Center Woodbridge</h3>
+      </div>
+      <div class="column twocol" style="margin:0, width:50%">
+      <div style="text-indent: 50px">
+      <strong><font color="#fc9835">Address</font></strong>
+      </div>
+      Woodbridge Village Center<br />
+      4624 Barranca Pkwy<br />
+      Irvine, CA 92604<br />
+      Next to The Movie Theater<br/>
+      </div>
+      
+      <div class="column twocol" style="margin:0, width:50%">
+      <div style="text-indent: 50px">
+      <strong><font color="#fc9835">Hours</font></strong>
+      </div>
+      Mon: 2:30pm - 7:00pm<br />
+      Tue: 2:30pm - 7:00pm<br />
+      Wed: 2:00pm - 7:00pm<br />
+      Thu: 2:30pm - 7:00pm<br />
+      Sat: 9:00am - 1:00pm<br/>
+      (949) 651-1200<br />
+      </div>
+</div>
+4/15/2020 12:43 Footer fixed: now mobile responsive.
+
+<!-- 4:00PM--Homepage: SLIDESHOW PROBLEMS -->
+<h1>
+    CURRENT SETTING:
+    ~slideshow is NON-RESPONSIVE and has constant height:400px.
+    ~images become highly distorted, while text-slides squish (unsuccessfully) into a tiny box.
+    ~one image has extremely low resolution (500x318) and can't (also shouldn't) be scaled up.
+
+    W.P. OBSERVATIONS
+    If the slideshow is RESPONSIVE and maintains 3:1 width-height ratio...
+    ~Image-slides render fine but text-slides get cut off significantly. No apparent fix available without changing text-slides.
+    ~Wordpress can't fix the issue of the low-res image having insufficient height, resulting in one slide being 20% shorter than the other five.
+
+  <!-- SLIDESHOW FIXES -->
+  Option 1: 
+    Recombine each slide-pair into a single slide w/ a single, clickable image
+    Remove all 6 slides and replace with 3 clickable images w/ equal widths and heights.
+  Option 2: 
+    Scrap the current slideshow.
+    Retake photos for slideshow to showcase up-to-date photos.
+</h1>
+
+<!-- Mobile: NAVBAR HAMBURGER POSITIONING. Proposed fixes (for screen size < 760) -->
+<a class="nav-show" href="#access">Show Navigation</a> (hamburger)
+<style>
+  .nav-show {
+    position: absolute;
+    top: 20px;
+    right: 6%;
+    display: block;
+    width: 40px;
+    height: 32px !important;
+    padding: 0;
+    background: url(images/nav.png) no-repeat;
+    border: none;
+    text-indent: -1000px;
+    overflow: hidden;
+  }
+</style>
+  <!-- COLLAPSED MENU DIV  -->
+<div class="menu-menu-1-container" style="
+    position:  absolute;
+    right: 6%;
+    width: 80%;
+    top: -160px;
+">
+  <ul id="menu-menu-1" class="menu">
+    <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-29"><a href="http://irvinekumon.com/" style="height: auto;">Home</a></li>
+    <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-30"><a href="http://irvinekumon.com/about/" style="height: auto;">About</a>
+      <ul class="sub-menu">
+	      <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="http://irvinekumon.com/the-kumon-method/">The Kumon Method</a></li>
+	      <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="http://irvinekumon.com/meet-our-teachers/">Meet Our Teachers</a></li>
+	      <li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="http://irvinekumon.com/testimonial/">Testimonials</a></li>
+      </ul>
+    </li>
+    <li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="http://irvinekumon.com/prospective-parents/" style="height: auto;">Prospective Parents</a></li>
+    <li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="http://irvinekumon.com/existing-parents/" style="height: auto;">Existing Parents</a></li>
+    <li id="menu-item-474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-474"><a href="http://irvinekumon.com/hw-barranca/" style="height: auto;">HW – Barranca</a></li>
+    <li id="menu-item-438" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-434 current_page_item menu-item-438"><a href="http://irvinekumon.com/hw-campus/" style="height: auto;">HW – Campus</a></li>
+    <li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="http://irvinekumon.com/faqs/" style="height: auto;">FAQs</a></li>
+    <li id="menu-item-271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-271"><a href="http://irvinekumon.com/jobs/" style="height: auto;">Jobs</a></li>
+  </ul>
+</div>
+  <style>
+    .menu-menu-1-container{
+      position: absolute;
+      right: 6%;
+      width: 80%;
+      top: -160px;
+    }
+  </style>
+
+
+UI/UX PROPOSED CHANGES 4/15/2020
+
+<!-- HOMEPAGE -->
+<h1>
+  1. I don't know what Kumon does from first glance; let's fix that.
+     Redo slideshow: should show current staff, general "what we do for your child" statements, Existing/Prospective Parents links.
+     Resize Slideshow such that it is not the only thing that you can see upon visiting Kumon's homepage.
+  2. EMPHASIZE KUMON'S ONLINE, CONTACT-FREE INSTRUCTION AND HOMEWORK REVIEW. AT THE VERY TOP.
+  3. Remove "Announcements", square Kumon logo. Condense the COVID-19 announcement and update to explain homework system clearly.
+</h1>
+
+<!-- PROSPECTIVE PARENTS -->
+<h2>
+  1. Remove "What You Need to Know" section on the bottom. Update and put important "need to know" bullet points at the TOP of Prospective Parents page.
+  2. Link to survey (for mobile phone) should open link in a new window OR make survey mobile-responsive.
+  3. Update survey itself:
+    ~move kumon logo to top of first field
+    ~allow fields for Student #3 and #4 (school year update: 2020-2021)
+    ~if there are no orientations available at either center due to the pandemic, remove all text referring to them.
+    ~Remove Orientation Date/Location checkbox: ANNOUNCEMENT, then checkbox for "I have read and understand the special announcement."
+</h2>
+
+<!-- EXISTING PARENTS -->
+<h3>
+  This page a bit wordy and confusing.
+  <!-- ("if you're interested" versus "Sign your child up for online sessions") -->
+  
+  <!-- ~Begin the page with a quick note about the importance of keeping up with Kumon/school work... 
+    ...knowing that public schools are CLOSED INDEFINITELY. Kumon is there for you no matter what.
+  ~Advertise Kumon's adaptability and CONTINUED staff availability even during the pandemic?
+  
+  =>LOW STUDENT:TEACHER RATIOS for online sessions: (table) 1:1 student:teacher ratio for children under 1st grade; 2:1 for children over 1st grade.
+  =>New Homework Exchange System (dur ing Remote Learning)
+    request homework here: BARRANCA (link) CAMPUS (link)
+
+  ~~Online Sessions Walkthrough: Sign Up Form at the bottom~~
+  Section 1: PREPARING FOR/INSTALLING ZOOM
+    "AFTER YOU HAVE REGISTERED FOR ONLINE SESSIONS (in the form below) you'll receive a confirmation email.
+    The Zoom session link will be sent out via email either the night before or the morning of your scheduled session.
+    *Check your spam folder for the Zoom session link
+    *If you have not received the Zoom Session Link email by 10:30 AM, you must contact the center at least an hour before the session is scheduled to start.
+    VIDEO BOX
+    
+  Section 2: DURING the session:
+    "Have the day's homework on hand to do <i>with the teacher</i> during the session."(homework GENERALLY shouldn't be completed prior to session)
+    "*Make sure the camera is pointed at the students' pencil and paper during the session!"
+    *Be present and available during the session!
+    *Session times have strict ending times, so be prepared for each session 5 minutes in advance.
+
+  Section 3: SIGN UP NOW
+    Registration form. -->
+  changes completed 4/16/2020!
+  **If possible, remind parents w/ all the Section 1-2 info in Zoom Invites.
+</h3>
