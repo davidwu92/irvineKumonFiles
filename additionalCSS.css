@@ -1,0 +1,379 @@
+#site-title {
+  height: 75px;
+  margin: -40px 40px 40px;
+}
+#social-media-icons {
+	visibility:hidden;
+	margin: 0;
+}
+#header{
+	background-color: rgba(50, 170, 255, 0.8);
+  border-top: #fc9835 3px solid;
+}
+#hwRequestsIframe{
+	position: absolute; 
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 105%;
+/* 	overflow-x:hidden; */
+}
+
+#hwRequestsDiv{
+	position: relative;
+	width: 118%;
+	left: -9%;
+	height: 260vw;
+	max-height: 2600px;
+}
+
+/* XSMALL (iPhone 5: 320x568) */
+@media (min-width: 300px) and (max-width: 320px) {
+	#site-title {
+		height: 75px;
+    margin: -3% 0 -2.5%;
+	}
+	#site-title img{
+	  margin: 22px 0;
+    vertical-align: middle;
+	}
+	#access .nav-show, #access a.nav-show:hover{
+		top: 76px;
+    right: 6%;
+	}
+	#access:target .menu{
+		margin:0;
+		position:absolute;
+		top:108px;
+		left: 5%;
+    width: 90%;
+		background:none;
+		background-color: #fc9835;
+	  border-radius: 3%;
+	}
+	#access:target .menu a{
+		border: 1px solid white;
+	}
+	#header{
+	  background-color: rgb(50, 170, 255, 0.8);
+    border-top: #fc9835 3px solid;
+		border-bottom: #fc9835 3px solid;
+	}
+	#header input#s{
+		width:0px;
+	}
+	#header #searchform{
+		width:0px;
+		float: left;
+		left: 2%;
+	}
+	#hwRequestsDiv{
+		height: 1150vw;
+		max-height: 4000px;
+	}
+	#searchform>input{
+		width:170px;
+	}
+	#footerDetailContainer{
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-around;
+	 align-items: center;
+	}
+  #footerDetails {
+   text-align: center;
+  }
+  #footerDetails>p{
+	 margin:0;
+	}
+	#epWalkthrough1Container{
+		display: flex;
+		flex-direction:column;
+	}
+	#epWalkthrough1Left{
+	  width:100%;	
+	} 
+	#epWalkthrough1Right {
+		width: 100%;
+		position:relative;
+		padding: 0;
+	}
+	#epWalkthrough1, #epWalkthrough2, #epWalkthrough3, #epImportant, #hwRequestsBox,
+	#infoBox{
+		position: relative;
+		width: 110%;
+		left: -7%;
+	}
+	#epImportant{
+		padding: 0 2%;
+  }
+  #infoBoxSidesContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  #infoBoxSides{
+    position: relative;
+		width: 110%;
+		left: -7%;
+  }
+}
+/* SMALL SCREENS */
+@media (min-width: 321px) and (max-width: 600px) {
+	#site-title {
+		height: 75px;
+    margin: -3% 0 -2.5%;
+	}
+	#site-title img{
+	  margin: 22px 0;
+    vertical-align: middle;
+	}
+	#access .nav-show, #access a.nav-show:hover{
+		top: 76px;
+    right: 6%;
+	}
+	#access:target .menu{
+		margin:0;
+		position:absolute;
+		top:108px;
+		left: 5%;
+    width: 90%;
+	  background:none;
+		background-color: #fc9835;
+		border-radius: 3%;
+	}
+	#access:target .menu a{
+		border: 1px solid white;
+	}
+	#header{
+	  background-color: rgb(50, 170, 255, 0.8);
+    border-top: #fc9835 3px solid;
+		border-bottom: #fc9835 3px solid;
+	}
+	#header input#s{
+		width:0px;
+	}
+	#header #searchform{
+		width:0px;
+		float: left;
+		left: 2%;
+	}
+	#searchform>input{
+		width:170px;
+	}
+	#hwRequestsDiv{
+		height: 1000vw;
+		max-height: 3400px;
+	}
+	
+	#footerDetailContainer{
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-around;
+	 align-items: center;
+	}
+  #footerDetails {
+	  text-align: center;
+  }
+	#footerDetails>p{
+		margin:0;
+	}
+		#epWalkthrough1Container{
+		display: flex;
+		flex-direction:column;
+	}
+	#epWalkthrough1Left{
+	  width:100%;	
+	} 
+	#epWalkthrough1Right {
+		width: 100%;
+		position:relative;
+		padding: 0;
+	}
+	#epWalkthrough1, #epWalkthrough2, #epWalkthrough3, #epImportant, #hwRequestsBox, #infoBox{
+		position: relative;
+		width: 110%;
+		left: -7%;
+	}
+	#epImportant{
+		padding: 0 2%;
+  }
+  #infoBoxSidesContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  #infoBoxSides{
+    position: relative;
+		width: 110%;
+		left: -7%;
+  }
+}
+
+/* MEDIUM SCREENS */
+@media (min-width: 601px) and (max-width: 992px) {
+	#header #searchform{
+	float: right;
+    margin: 2% 1% 1% 1%;
+}
+	#hwRequestsDiv{
+		height: 290vh;
+	}
+	#footerDetailContainer{
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: flex-start;
+		align-items: center;
+	}
+	#footerDetails > p{
+ 	margin: 0px 0px -5px 0px;
+ }
+	#epImportant {
+		padding: 0.5% 0.5%
+	}
+ 	#epWalkthrough1Container{
+		display: flex;
+		flex-direction:row;
+		justify-content:space-between;
+	}
+	#epWalkthrough1Left{
+	  width: 40%	
+	} 
+	#epWalkthrough1Right {
+		width: 60%;
+		padding: 0 5px 0 8px;
+	}
+	#epWalkthrough2Container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#epWalkthrough2Left, #epWalkthrough2Right{
+		width:50%
+  }
+  #infoBoxSidesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  #infoBoxSides{
+    position: relative;
+		width: 47%;
+  }
+}
+
+/* MID-LARGE SCREENS (iPad Pro @ 1024 width) */
+@media (min-width: 993px) and (max-width: 1025px) {
+	#header #searchform{
+	float: right;
+    margin: 2% 1% 1% 1%;
+}
+		#hwRequestsDiv{
+		height: 295vw;
+		max-height: 3000px;
+	}
+	#footerDetailContainer{
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-around;
+	 align-items: flex-start;
+	}
+	#footerDetails > p{
+ 	 margin: 0px 0px -15px 0px;
+  }
+		#epImportant {
+		padding: 0.5% 0.5%
+	}
+	 	#epWalkthrough1Container{
+		display: flex;
+		flex-direction:row;
+		justify-content:space-between;
+	}
+	#epWalkthrough1Left{
+	  width: 40%	
+	} 
+	#epWalkthrough1Right {
+		width: 60%;
+		padding: 0 5px 0 8px;
+	}
+		#epWalkthrough2Container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#epWalkthrough2Left, #epWalkthrough2Right{
+		width:50%
+  }
+  #infoBoxSidesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  #infoBoxSides{
+    position: relative;
+		width: 47%;
+  }
+}
+/* LARGE SCREENS */
+@media (min-width: 1026px){
+	#header #searchform{
+	float: right;
+    margin: 2% 1% 1% 1%;
+}
+	#footerDetailContainer{
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-around;
+	 align-items: flex-start;
+	}
+ #footerDetails > p{
+ 	margin: 0px 0px -20px 0px;
+ }
+	#epImportant {
+		padding: 0.5% 0.5%
+	}
+	#epWalkthrough1Container{
+		display: flex;
+		flex-direction:row;
+		justify-content:space-between;
+	}
+	#epWalkthrough1Left{
+	  width: 40%	
+	} 
+	#epWalkthrough1Right {
+		width: 60%;
+		padding: 0 5px 0 8px;
+	}
+		#epWalkthrough2Container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#epWalkthrough2Left, #epWalkthrough2Right{
+		width:50%
+  }
+  #infoBoxSidesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  #infoBoxSides{
+    position: relative;
+		width: 47%;
+  }
+}
+/* 4/15/2020 FOOTER STYLING check @media queries */
+#footerDetailContainer{
+  visibility: visible;
+	/*LARGE SCREENS*/
+/* 	display: flex;
+	flex-direction: row;
+	justify-content: space-around; */
+/* SMALL SCREENS/MOBILE	 */
+/* 	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center; */
+}
+#footerDetailTitle{
+	text-align: center;
+	margin-top: 8px;
+}
